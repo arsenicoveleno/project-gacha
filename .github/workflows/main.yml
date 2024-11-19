@@ -31,7 +31,7 @@ jobs:
       # Step 4: Run Newman with the Postman collection
       - name: Run Postman tests
         run: |
-          newman run docs/postman-tests/Market_Tests.postman_collection.json \
+          newman run /docs/postman-tests/Market_Tests.postman_collection.json \
             --reporters cli,junit \
             --reporter-junit-export test-results.xml
 
